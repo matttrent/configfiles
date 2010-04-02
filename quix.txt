@@ -19,9 +19,9 @@ read        javascript:(function(){readStyle='style-newspaper';readSize='size-sm
 supr        javascript:var%20e=document.createElement('script');e.setAttribute('type','text/javascript');e.setAttribute('src','http://su.pr/supr_shortcut.php?action=js_post');document.body.appendChild(e);void(0); Post to su.pr
 hd          javascript:var%20w=window.open('http://huffduffer.com/add?popup=false&page='+encodeURIComponent(location.href),'huffduff','scrollbars=1,status=0,resizable=1,location=0,toolbar=0,width=360,height=480'); Huffduff 
 gr          javascript:%20var%20array%20=%20document.URL.match(/amazon\.(.*?)\/.*?\/.*?\/(.{10})/);%20if%20(array%20==%20null)%20{%20alert('Sorry,%20this%20doesn\'t%20appear%20to%20be%20an%20Amazon%20book%20page.');%20}%20else%20{%20var%20x%20=%20window.open('http://www.goodreads.com/review/isbn/'+%20array[2]%20+%20'?tld='%20+%20array[1]%20+%20'&from=bm',%20'add_review');%20x.focus();%20} Add to goodreads
-tarch       javascript:location.href='x-together://AddItem?kind=WebArchive&name='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(window.location); Add web archive to Together
-tbook       javascript:location.href='x-together://AddItem?kind=Bookmark&name='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(window.location); Add bookmark to Together
-tpdf        javascript:location.href='x-together://AddItem?kind=WebPDF&name='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(window.location); Add PDF to Together
+>tarch       javascript:location.href='x-together://AddItem?kind=WebArchive&name='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(window.location); Add web archive to Together
+>tbook       javascript:location.href='x-together://AddItem?kind=Bookmark&name='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(window.location); Add bookmark to Together
+>tpdf        javascript:location.href='x-together://AddItem?kind=WebPDF&name='+encodeURIComponent(document.title)+'&url='+encodeURIComponent(window.location); Add PDF to Together
 
 
 
