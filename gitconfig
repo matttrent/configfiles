@@ -1,0 +1,19 @@
+[user]
+	name    = Matthew Trentacoste
+	email   = mt@matttrent.com
+
+[color]
+	diff    = auto
+	status  = auto
+	branch  = auto
+
+[alias]
+    st      = status
+    di      = diff
+    co      = checkout
+    ci      = commit
+    br      = branch
+    sta     = stash
+    
+#[diff]
+#    external    = ~/Applications/git-changes-wrapper.sh
