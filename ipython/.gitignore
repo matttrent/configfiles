@@ -1,0 +1,8 @@
+db
+log
+security
+history
+
+IPython_crash_report.txt
+*.py
+*.pyc
