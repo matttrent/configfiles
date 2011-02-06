@@ -19,10 +19,6 @@ export ZSH_THEME="mtrent"
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git github macports osx textmate)
 
-# History search with up and down arrow keys
-bindkey '^[[A' history-beginning-search-backward
-bindkey '^[[B' history-beginning-search-forward
-
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
