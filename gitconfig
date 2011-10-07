@@ -1,6 +1,6 @@
 [user]
-	name    = Matthew Trentacoste
-	email   = mt@matttrent.com
+	name = Matthew Trentacoste
+	email = mt@matttrent.com
 
 [color]
 	diff    = auto
@@ -17,3 +17,9 @@
     
 #[diff]
 #    external    = ~/Applications/git-changes-wrapper.sh
+[difftool "Kaleidoscope"]
+	cmd = ksdiff-wrapper git \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope

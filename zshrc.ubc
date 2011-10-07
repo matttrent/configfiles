@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh configuration.
-export ZSH=$HOME/Archive/configfiles/oh-my-zsh
+export ZSH=$HOME/Dropbox/Personal/configfiles/oh-my-zsh
 
 # Set to the name theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -17,7 +17,7 @@ export ZSH_THEME="mtrent"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew git github git-flow macports osx ssh-agent textmate)
+plugins=(git github)
 
 source $ZSH/oh-my-zsh.sh
 
