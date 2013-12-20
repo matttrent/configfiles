@@ -17,7 +17,25 @@ export DISABLE_AUTO_UPDATE="true"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(brew bundler cloudapp extract gem git github git-flow heroku osx pip python rsync ssh-agent sublime terminalapp)
+plugins=(
+brew \
+bundler \
+cloudapp \
+extract \
+gem \
+git \
+github \
+git-flow \
+heroku \
+osx \
+pip \
+python \
+rsync \
+ssh-agent \
+sublime \
+terminalapp \
+xcode \
+)
 
 source $ZSH/oh-my-zsh.sh
 
