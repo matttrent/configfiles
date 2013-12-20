@@ -1,2 +1,7 @@
 oh-my-zsh
-emacs/
+emacs
+aws
+ssh_keys
+
+ipython/profile_default/history.sqlite
+ipython/profile_default/pid/ipcontroller.pid
