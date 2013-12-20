@@ -1,6 +1,6 @@
 [user]
 	name = Matthew Trentacoste
-	email = mt@matttrent.com
+	email = trentaco@adobe.com
 
 [color]
 	diff    = auto
@@ -14,6 +14,17 @@
     ci      = commit
     br      = branch
     sta     = stash
+	switch = !legit switch \"$@\"
+	branches = !legit branches
+	sprout = !legit sprout \"$@\"
+	unpublish = !legit unpublish \"$@\"
+	harvest = !legit harvest \"$@\"
+	sync = !legit sync \"$@\"
+	publish = !legit publish \"$@\"
+	graft = !legit graft \"$@\"
+
+[legit]
+	allowBlackForeground = false
     
 #[diff]
 #    external    = ~/Applications/git-changes-wrapper.sh
@@ -23,3 +34,14 @@
 	prompt = false
 [diff]
 	tool = Kaleidoscope
+[core]
+	excludesfile = /Users/mmt/.gitignore_global
+	quotepath = false
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = current

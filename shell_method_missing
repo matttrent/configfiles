@@ -9,10 +9,34 @@ Copyright (c) 2010 matttrent.com. All rights reserved.
 
 import sys
 import os
+import urlparse
+import subprocess
 
+#------------------------------------------------------------------------------
+
+def wgetc( args ):
+    
+    url = args[0]
+    
+    if len( args ) is 2:
+        filename = args[1]
+    else:
+        filename = urlparse.urlparse( args[0] )
+        filename = filename.path.split( '/' )[-1]
+
+    cmd = 'wget', '-c', '-t', 'inf', '-O', filename, url
+    print reduce( lambda x,y: x+' '+y, cmd )
+    subprocess.call( cmd )
+
+#------------------------------------------------------------------------------
 
 def main():
-    print 'args:', sys.argv[1:]
+    
+    if sys.argv[1] == 'wgetc':
+        wgetc( sys.argv[2:] )
+    
+    else:
+        print 'args:', sys.argv[1:]
 
 
 if __name__ == '__main__':
