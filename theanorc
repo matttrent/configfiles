@@ -1,0 +1,10 @@
+[global]
+floatX = float32
+device = gpu
+
+[nvcc]
+fastmath = True
+flags=-ccbin=/usr/bin/clang
+
+[cuda]
+root = /usr/local/cuda
